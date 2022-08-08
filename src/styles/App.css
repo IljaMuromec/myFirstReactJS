@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #cef;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+.changePage {
+  margin: 0;
+  padding: 5px;
+}
+
+.buttonContainer {
+  background-color: #2F4F4F;
+  height: 100px;
+  width: 100%;
+  min-width: 812.09px;
+  color: white;
+}
+
+.form-outline {
+  margin: 5px;
+  padding: 4px;
+  width: 300px;
+}
+
+.dropdown {
+  margin: 8px;
+  width: 250px;
+  height: 38px;
+  border-radius: 5px;
+}
+
+.dropdown-item{
+  background-color: gray;
+  color:white;
+}
+
+.filterForm{
+  margin-right: 10px;
+  width: 100px;
+  margin-top: 7px;
+}
+
+.container{
+  min-width: 812.09px;
+}
+
+.dropFilter{
+  margin-right: 10px;
+  margin-top: 7px;
+}
+.dateBorder{
+  border-radius: 5px;
+  margin-bottom: 2px;
+}
