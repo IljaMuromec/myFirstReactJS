@@ -1,1 +1,1 @@
-Hi my name is Iljs, this is my first work on ReactJS
+Hi my name is Ilja, this is my first work on ReactJS
