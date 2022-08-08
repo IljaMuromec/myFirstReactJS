@@ -202,17 +202,15 @@ const TableWithData = ({
             </th>
           </tr>
         </thead>
-        {currentPosts[0] ? (
-          <tbody>
-            {currentPosts.map((item) => (
-              <tr key={item.countriesAndTerritories + item.dateRep}>
-                <td>{item.countriesAndTerritories}</td>
-                <td>{item.cases}</td>
-                <td>{item.deaths}</td>
-                <td>{item.totalCases}</td>
-                <td>{item.totalDeaths}</td>
-                <td>{item.casesPer1000}</td>
-                <td>{item.deathsPer1000}</td>
+        {currentPosts.map((item, idx) => (
+              <tr key={idx}>
+                <td>{item?.countriesAndTerritories}</td>
+                <td>{item?.cases}</td>
+                <td>{item?.deaths}</td>
+                <td>{item?.totalCases}</td>
+                <td>{item?.totalDeaths}</td>
+                <td>{item?.casesPer1000}</td>
+                <td>{item?.deathsPer1000}</td>
               </tr>
             ))}
           </tbody>
